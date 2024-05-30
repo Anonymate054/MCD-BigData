@@ -1,0 +1,24 @@
+name: env_up_Bdata1
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pandas
+  - numpy
+  - matplotlib
+  - plotnine
+  - seaborn
+  - statsmodels
+  - scipy
+  - plotly
+  - tqdm
+  - optuna
+  - pip
+  - ipykernel
+  - prophet
+  - pip:
+      - pyarrow
+      - fastparquet
+      - skforecast
+      - jupyter

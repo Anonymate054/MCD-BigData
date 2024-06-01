@@ -1,17 +1,18 @@
-# Forecast usando prophet y optuna
-Repositorio dedicado al proyecto escolar de la materia de grandes datos
+# Forecast using Prophet and Optuna
+Repository dedicated to the school project for the Big Data course
 
-# Configuración del Entorno de Machine Learning
+# Machine Learning Environment Setup
 
-Este proyecto utiliza un entorno de Python gestionado por Conda. Para instalar el entorno con todas las dependencias necesarias, sigue estos pasos:
+This project uses a Python environment managed by Conda. To install the environment with all necessary dependencies, follow these steps:
 
-1. **Descarga el archivo YAML**
+1. **Download the YAML file**
 
-   Asegúrate de tener el archivo `environment.yml` en tu directorio de trabajo.
+   Make sure you have the `environment.yml` file in your working directory.
 
-2. **Crea el entorno con Conda**
+2. **Create the environment with Conda**
 
-   Abre una terminal y ejecuta el siguiente comando para crear el entorno:
+   Open a terminal and run the following command to create the environment:
 
    ```bash
    conda env create -f environment.yml
+

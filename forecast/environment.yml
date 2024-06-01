@@ -17,6 +17,8 @@ dependencies:
   - pip
   - ipykernel
   - prophet
+  - pymysql
+  - joblib
   - pip:
       - pyarrow
       - fastparquet

@@ -144,22 +144,20 @@ MariaDB [(none)]> CREATE DATABASE QQP;
 
 ```sql
 MariaDB [(none)]> USE QQP;
-MariaDB [QQP]> CREATE TABLE IF NOT EXISTS `QQP_DETAIL` (
-    `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    `PRODUCT` varchar(65),
-    `PRESENTATION` varchar(180),
-    `BRAND` varchar(65),
-    `CATEGORY` varchar(65),
-    `CATALOG` varchar(65),
-    `PRICE` decimal(18,2),
-    `REGISTRATION_DATE` datetime,
-    `COMMERCIAL_CHAIN` varchar(65),
-    `BUSINESS_LINE` varchar(65),
-    `COMMERCIAL_NAME` varchar(120),
-    `ADDRESS` varchar(255),
-    `STATE` varchar(120),
-    `MUNICIPALITY` varchar(120),
-    `LATITUDE` decimal(18,6),
-    `LONGITUDE` decimal(18,6)
+MariaDB [QQP]> CREATE TABLE QQP.aggregated (
+  `fecha` longtext DEFAULT NULL,
+  `fecha_year` int(11) DEFAULT NULL,
+  `fecha_month` int(11) DEFAULT NULL,
+  `producto` longtext DEFAULT NULL,
+  `descripcion` longtext DEFAULT NULL,
+  `count_marca` bigint(20) NOT NULL,
+  `count_tiendas` bigint(20) NOT NULL,
+  `count_estados` bigint(20) NOT NULL,
+  `count_municipios` bigint(20) NOT NULL,
+  `precio_avg` decimal(22,6) DEFAULT NULL,
+  `precio_desv_std` double DEFAULT NULL,
+  `precio_median` decimal(18,2) DEFAULT NULL,
+  `precio_max` decimal(18,2) DEFAULT NULL,
+  `precio_min` decimal(18,2) DEFAULT NULL
 );
 ```

@@ -20,7 +20,7 @@ To utilize Google Cloud SDK for your project, follow these steps to install and 
     Unpack the downloaded archive using the following command:
 
    ``` bash
-   ./google-cloud-sdk/install.sh
+   tar -xvzf google-cloud-cli-477.0.0-linux-x86_64.tar.gz
     ```
 
 3. **Install Google Cloud SDK:**
